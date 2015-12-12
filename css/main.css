@@ -1,0 +1,134 @@
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+p, h1, h2, h3, h4, h5 {
+  font-family:  "Courier New",
+"Lucida Console", monospace;
+ color: white;
+}
+
+h1, h2, h3, a {
+  text-shadow:1px 1px gold;
+}
+
+.container img {
+  width: 100%;
+}
+
+div #happiness {
+  color: white;
+}
+
+#countup p {
+display: inline-block;
+padding: 5px;
+margin-top: 10px;
+font-size: 2.7em;
+line-height: 1;
+text-align: center;
+}
+
+body {
+  background-color: black !important ;
+  width:100%;
+}
+
+#time {
+  background-color: black;
+  color:white;
+}
+
+#widget {
+  background-color: grey;
+}
+
+#col-centered {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.col-centered
+{
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header-unit {
+  height: 600px;
+  border: none;
+  border-right:none;
+  border-left: none;
+  position: relative;
+  padding: 20px;
+}
+#video-container {
+
+}
+#video-container {
+position: absolute;
+  top: -50%;
+    left: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    overflow: hidden;
+}
+video {
+	position:absolute;
+	z-index:-1;
+}
+video.fillWidth {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+  -webkit-filter: opacity(.5);
+filter: opacity(.5);
+overflow: hidden;
+}
+#banner {
+  height: 900px;
+  overflow: hidden;
+}
+
+#banner img {
+  z-index: -1;
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+  -webkit-filter: opacity(.7);
+filter: opacity(.5);
+height:100%;
+}
+
+div #op {
+  clear:none;
+  position: relative;
+  min-height: 250px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+#oped {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3;
+  -webkit-filter: opacity(.4);
+filter: opacity(1);
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
