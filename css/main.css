@@ -8,6 +8,11 @@ p, h1, h2, h3, h4, h5 {
  color: white;
 }
 
+
+#black {
+  background-color: black;
+}
+
 h1, h2, h3, a {
   text-shadow:1px 1px gold;
 }
