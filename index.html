@@ -120,7 +120,7 @@ function drawCurve2() {
         backgroundColor: 'black',
         hAxis: {textStyle:{color: 'white'}},
         vAxis: {textStyle:{color: 'white'}},
-legend: { position: 'bottom', textStyle: {color: 'white'} }      };
+legend: { position: 'none', textStyle: {color: 'white'} }      };
 
       var chart = new google.visualization.LineChart(document.getElementById('curve_chart2'));
 
@@ -184,7 +184,7 @@ function drawCurve() {
         backgroundColor: 'black',
         hAxis: {textStyle:{color: 'white'}},
         vAxis: {textStyle:{color: 'white'}},
-        legend: { position: 'bottom', textStyle: {color: 'white'} }
+        legend: { position: 'none', textStyle: {color: 'white'} }
       };
 
       var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
@@ -275,53 +275,54 @@ function drawStacked() {
          </head>
 
              <body>
-      <div class="header-unit">
-      <div id="video-container">
-      <video autoplay loop class="fillWidth" poster="thailand-coup.jpg">
+
+
+      <div class="video-container">
+      <video autoplay loop  preload="metadata" class="fillWidth" poster="thailand-coup.jpg">
       <source src="thaipbs.mp4" type="video/mp4"/>
       <source src="thaipbs.webm" type="video/webm"/>
       Your browser does not support the video tag. I suggest you upgrade your browser.
       </video>
       </div><!-- end video-container -->
-      <div class="headline">
-        <h1><br></h1>
-      </div>
+      <div class="headline" style="text-align:right">
 <div id="col-centered" class="col-xs-12 col-sm-12 col-lg-12 col-md-12">
       <h1><br>Life Under Thai Junta by Number</h1>
     </div>
 <div id="col-centered" class="col-xs-12 col-sm-8 col-lg-5 col-md-5" style="height:100">
 
-<p>On May 22, 2014, after months of street protests, the Thai military staged a coup and seized power from Pheu Thai government.
+<p>On May 22, 2014, after months of street protests, the Thai military staged a coup and seized power from the government.
 Led by General Prayuth Chan-ocha, the coupmakers established the National
 Council for Peace and Order and formed a military government to rule the country.
 
-<br><br>Touted to solve what seemed like a deadlock in Thai politics, the junta promised to deliver happy, peaceful and corruption-free country. What do Thais get at expense of their rights?</p>
-<p><br>compiled by Thitipol Panyalimpanun</p>
+<br><br>Touted to solve what seemed like a deadlock in Thai politics, the junta promised to deliver a happy, peaceful and corruption-free country. More than 500 days have passed, what do Thais get at the expense of their rights?</p>
+<p><br>compiled by <a href="http://thitipol.com">Thitipol Panyalimpanun</a><br><p>video from <a href="https://www.youtube.com/watch?v=ZVaOp3ABilU"> Thai PBS</a></p><br>
       </div>
-      </div><!-- end .header-unit -->
+
+      </div>
+      <!-- end .headline -->
 
       <div class="container" id="content">
 <br><br>
           <!-- Example row of columns -->
           <div class="row" id="time">
             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 col-centered" id="countup">
-
                 <p id="days">00</p>
-                <p class="timeRefDays">days</p>
+                <p class="timeRefDays">days</p><br>
                 <p id="hours">00</p>
-                <p class="timeRefHours">hours</p>
+                <p class="timeRefHours">hours</p><br>
                 <p id="minutes">00</p>
-                <p class="timeRefMinutes">minutes</p>
+                <p class="timeRefMinutes">minutes</p><br>
                 <p id="seconds">00</p>
-                <p class="timeRefSeconds"></p>
-                <p>seconds since May 22, 2014</p>
+                <p class="timeRefSeconds">seconds</p><br>
+                <p>since May 22, 2014</p>
               </div>
               </div>
 <div id="black" class="row">
+  <br><br><br>
   <div  class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
               <h2>Breaking the record</h2>
               <p>Last Semtember, the junta announced a new roadmap plan to stay in power for 20 more months, promising an election in mid-2017. By that time, Thai people will get the longest-running military government
-              in Thailand since 1958, according to <a href="http://www.prachatai.com/journal/2015/09/61653">Prachatai</a>
+              in Thailand since 1958, according to <a href="http://www.prachatai.com/journal/2015/09/61653">Prachatai</a>.
               </p>
           </div>
 
@@ -367,7 +368,7 @@ Council for Peace and Order and formed a military government to rule the country
 </div>
 <div id="op" class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
 <img id="oped" src="https://pbs.twimg.com/media/COID7gDUYAAf1--.jpg"  alt="Image via www.facebook.com/KartunSeiyThiyrath/">
-  <a href="https://twitter.com/PravitR/status/640078423356911616"><h3>"Welcome to 99.9% Thai DEMOCRACY! Police ensuring ban on anti-junta draft-charter protest is in place" — Pravit Rojanaphruk (@PravitR)</h3></a>
+  <a href="https://twitter.com/PravitR/status/640078423356911616"><h3>"Welcome to 99.9% Thai DEMOCRACY! Police ensuring ban on anti-junta draft-charter protest is in place" — @PravitR</h3></a>
 </div>
 
 </div>
@@ -398,7 +399,7 @@ Council for Peace and Order and formed a military government to rule the country
 <div class="row">
   <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
 <p>Rubber farmers in the south of Thailand are hit harder, struggling to make profits from
-  decreasingly low market price. According to <a href="http://www.rubber.co.th/ewtadmin/ewt/rubber_web/rubber2012/menu5.php">the Rubber Authority of Thailand</a>, the average market price for raw rubber sheet in October stood at 41.06 Baht per unit, the lowest since 2009.</p>
+  decreasingly low market price. According to <a href="http://www.rubber.co.th/ewtadmin/ewt/rubber_web/rubber2012/menu5.php">the Rubber Authority of Thailand</a>, the average market price for raw rubber sheet at Hatyai Rubber Market in October stood at 41.06 Baht per unit, the lowest since 2009.</p>
 </div>
 
   <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
@@ -406,7 +407,7 @@ Council for Peace and Order and formed a military government to rule the country
 </div>
 </div>
           <div id="col-centered" class=" col-md-4 col-lg-4"><br><i> <p>This web page is for educational purposes only.
-           It is produced based on publicly data available. Sources are listed below.</p></i>
+           It is produced based on publicly data available.</p></i>
           </div>
           <footer>
           </footer>
